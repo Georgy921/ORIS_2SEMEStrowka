@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "Monopoly.Server\\Monopoly.Server.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Monopoly.Client\\Monopoly.Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "Monopoly.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Monopoly.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Monopoly.Common.dll": {}
+        }
+      },
+      "Monopoly.Server/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Monopoly.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Monopoly.Server.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Monopoly.Server.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Monopoly.Common/1.0.0": {
+      "type": "project",
+      "path": "../Monopoly.Common/Monopoly.Common.csproj",
+      "msbuildProject": "../Monopoly.Common/Monopoly.Common.csproj"
+    },
+    "Monopoly.Server/1.0.0": {
+      "type": "project",
+      "path": "../Monopoly.Server/Monopoly.Server.csproj",
+      "msbuildProject": "../Monopoly.Server/Monopoly.Server.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "Monopoly.Common >= 1.0.0",
+      "Monopoly.Server >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\aleks\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\aleks\\Desktop\\ORIS\\repa\\Monopolia\\Monopoly.Client\\Monopoly.Client.csproj",
+      "projectName": "Monopoly.Client",
+      "projectPath": "C:\\Users\\aleks\\Desktop\\ORIS\\repa\\Monopolia\\Monopoly.Client\\Monopoly.Client.csproj",
+      "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aleks\\Desktop\\ORIS\\repa\\Monopolia\\Monopoly.Client\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\aleks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {
+            "C:\\Users\\aleks\\Desktop\\ORIS\\repa\\Monopolia\\Monopoly.Common\\Monopoly.Common.csproj": {
+              "projectPath": "C:\\Users\\aleks\\Desktop\\ORIS\\repa\\Monopolia\\Monopoly.Common\\Monopoly.Common.csproj"
+            },
+            "C:\\Users\\aleks\\Desktop\\ORIS\\repa\\Monopolia\\Monopoly.Server\\Monopoly.Server.csproj": {
+              "projectPath": "C:\\Users\\aleks\\Desktop\\ORIS\\repa\\Monopolia\\Monopoly.Server\\Monopoly.Server.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
